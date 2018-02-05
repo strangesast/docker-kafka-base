@@ -18,5 +18,5 @@ RUN chmod a+x /tmp/get-kafka.sh
 RUN /tmp/get-kafka.sh
 
 WORKDIR $KAFKA_HOME
-COPY scripts .
-RUN chmod a+x *.sh
+COPY scripts ./scripts
+RUN chmod a+x ./scripts/*.sh
